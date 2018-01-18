@@ -161,10 +161,10 @@ PageSlide.prototype.touchmove = function(e) {
             prev && prev.classList.add('moving');
         }
     }
+    
     if (this.flag === this.swipe) {
         e.preventDefault();
         e.stopPropagation();
-
         switch (this.swipe) {
             case 'X':
                 this.move = X;
