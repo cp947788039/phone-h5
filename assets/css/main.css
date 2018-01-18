@@ -149,6 +149,8 @@ h4 {
   z-index: 10;
   -webkit-transform: translateX(100%);
   transform: translateX(100%); }
+  .box-small.play {
+    z-index: 99; }
 
 .initbox {
   -webkit-transform: none;
@@ -346,55 +348,55 @@ h4 {
     position: absolute;
     left: 0;
     bottom: 0; }
-  .box2 .footer-menu a {
+  .box2 .footer-menu em {
     width: 1.4rem;
     height: 1.4rem;
     float: left;
     margin: 0 0.55rem;
     position: relative;
     color: rgba(255, 255, 255, 0.5); }
-    .box2 .footer-menu a:hover, .box2 .footer-menu a.active {
+    .box2 .footer-menu em.active {
       background: rgba(36, 61, 160, 0.5); }
-      .box2 .footer-menu a:hover span, .box2 .footer-menu a.active span {
+      .box2 .footer-menu em.active span {
         color: #fff; }
-      .box2 .footer-menu a:hover:nth-of-type(1):after, .box2 .footer-menu a.active:nth-of-type(1):after {
+      .box2 .footer-menu em.active:nth-of-type(1):after {
         background: url(../../assets/images/icon/spirit.png) no-repeat left -0.99rem;
         -webkit-background-size: 7rem 12rem;
         background-size: 7rem 12rem; }
-      .box2 .footer-menu a:hover:nth-of-type(2):after, .box2 .footer-menu a.active:nth-of-type(2):after {
+      .box2 .footer-menu em.active:nth-of-type(2):after {
         background: url(../../assets/images/icon/spirit.png) no-repeat -0.85rem -0.99rem;
         -webkit-background-size: 7rem 12rem;
         background-size: 7rem 12rem; }
-      .box2 .footer-menu a:hover:nth-of-type(3):after, .box2 .footer-menu a.active:nth-of-type(3):after {
+      .box2 .footer-menu em.active:nth-of-type(3):after {
         background: url(../../assets/images/icon/spirit.png) no-repeat -1.75rem -0.99rem;
         -webkit-background-size: 7rem 12rem;
         background-size: 7rem 12rem; }
-    .box2 .footer-menu a:nth-of-type(1):after {
+    .box2 .footer-menu em:nth-of-type(1):after {
       width: 0.44rem;
       height: 0.41rem;
       background: url(../../assets/images/icon/spirit.png) no-repeat left -1.61rem;
       -webkit-background-size: 7rem 12rem;
       background-size: 7rem 12rem; }
-    .box2 .footer-menu a:nth-of-type(2):after {
+    .box2 .footer-menu em:nth-of-type(2):after {
       width: 0.57rem;
       height: 0.35rem;
       background: url(../../assets/images/icon/spirit.png) no-repeat -0.85rem -1.61rem;
       -webkit-background-size: 7rem 12rem;
       background-size: 7rem 12rem; }
-    .box2 .footer-menu a:nth-of-type(3):after {
+    .box2 .footer-menu em:nth-of-type(3):after {
       width: 0.43rem;
       height: 0.38rem;
       background: url(../../assets/images/icon/spirit.png) no-repeat -1.75rem -1.61rem;
       -webkit-background-size: 7rem 12rem;
       background-size: 7rem 12rem; }
-    .box2 .footer-menu a:after {
+    .box2 .footer-menu em:after {
       content: '';
       position: absolute;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
       transform: translate(-50%);
       top: 0.3rem; }
-    .box2 .footer-menu a span {
+    .box2 .footer-menu em span {
       width: 100%;
       text-align: center;
       position: absolute;

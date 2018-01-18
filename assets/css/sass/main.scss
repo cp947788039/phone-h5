@@ -181,6 +181,9 @@ h4{font-weight:normal;}
 	z-index: 10;
 	@extend %transition;
 	@include translate(translateX,100%,0);
+	&.play{
+		z-index: 99;
+	}
 }
 .initbox{
 	-webkit-transform:none;
@@ -357,14 +360,14 @@ h4{font-weight:normal;}
 			left:0;
 			bottom:0;
 		}
-		a{
+		em{
 			width: 1.4rem;
 			height:1.4rem;
 			float: left;
 			margin:0 0.55rem;
 			position:relative;
 			color:rgba(255,255,255,0.5);
-			&:hover,&.active{
+			&.active{
 				background:rgba(36,61,160,0.5);
 				span{
 					color:#fff;
