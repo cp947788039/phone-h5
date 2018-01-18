@@ -104,17 +104,18 @@ PageSlide.prototype.bindEvents = function() {
             self.$el.addEventListener(evn, self[evn].bind(self), false);
         });
     }
-    $('.box1 .btn-box').on('click',function(){
-        self.next()
-    });
-    $('.box2 .btn-box').on('click',function(){
-        self.prev()
-    });
     if(self.swipe == 'X'){
         $('.footer-menu em').on('click',function(){
             var index = $(this).index();
             self.go(index);
             self.reset();
+        });
+    }else{
+        $('.box1 .btn-box').on('click',function(){
+            self.next();
+        });
+        $('.box2 .btn-box').on('click',function(){
+            self.prev();
         });
     } 
 }

@@ -53,10 +53,19 @@ $(function(){
             }
             
         },
+        _submit: function(_subBtn){
+            _subBtn.on('click',function(){
+                $(this).next().fadeIn();
+                setTimeout(() => {
+                    $(this).next().fadeOut();
+                },1000);
+            })
+        },
         _init:function(){
             var e=this;
             e._phoneNavShow();
             e._tabFun($('.main-tab'));
+            e._submit($('.submit-btn'));
         }
     }
     new phoneMenu({

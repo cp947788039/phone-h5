@@ -271,7 +271,7 @@ h4{font-weight:normal;}
 	.btn-box{
 		width:40%;
 		@include positionCenter(trans,true,false,false);
-		bottom:0.8rem;
+		bottom:0.4rem;
 		color:rgba(255,255,255,0.35);
 		text-align: center;
 		padding-top:0.4rem;
@@ -367,7 +367,7 @@ h4{font-weight:normal;}
 			margin:0 0.55rem;
 			position:relative;
 			color:rgba(255,255,255,0.5);
-			&.active{
+			&.active,&:hover{
 				background:rgba(36,61,160,0.5);
 				span{
 					color:#fff;
@@ -428,7 +428,7 @@ h4{font-weight:normal;}
 	.btn-box{
 		width:40%;
 		@include positionCenter(trans,true,false,false);
-		top:0.8rem;
+		top:0.4rem;
 		color:rgba(255,255,255,0.35);
 		text-align: center;
 		padding-top:0.4rem;
@@ -460,6 +460,14 @@ h4{font-weight:normal;}
 	right:0;
 	margin:auto;
 	z-index:999;
+	&.header-index{
+		width: 0.6rem;
+		left:auto;
+		right:0.25rem;
+		.nav .nav-wrapper{
+			width:100%;
+		}
+	}
 	.nav{
 		position: relative;
 		z-index:10;
@@ -650,7 +658,7 @@ h4{font-weight:normal;}
 				position:relative;
 				height:4.2rem;
 				overflow: hidden;
-				margin-bottom:3px;
+				margin-bottom:1px;
 				img{
 					width: 100%;
 					height:auto;
@@ -770,6 +778,25 @@ h4{font-weight:normal;}
 					&:hover{
 						opacity:0.7;
 					}
+				}
+				.layer-tips{
+					width:3rem;
+					height:1.7rem;
+					line-height:1.7rem;
+					text-align: center;
+					-webkit-border-radius:0.05rem;
+					border-radius:0.05rem;
+					color: $whiteColor;
+					font-size:$smallFontSize;
+					background:rgba(0,0,0,0.6);
+					position:fixed;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					margin:auto;
+					z-index:10;
+					display:none;
 				}
 			}
 		}

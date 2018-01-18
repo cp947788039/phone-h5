@@ -251,7 +251,7 @@ h4 {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%);
-    bottom: 0.8rem;
+    bottom: 0.4rem;
     color: rgba(255, 255, 255, 0.35);
     text-align: center;
     padding-top: 0.4rem; }
@@ -355,19 +355,19 @@ h4 {
     margin: 0 0.55rem;
     position: relative;
     color: rgba(255, 255, 255, 0.5); }
-    .box2 .footer-menu em.active {
+    .box2 .footer-menu em.active, .box2 .footer-menu em:hover {
       background: rgba(36, 61, 160, 0.5); }
-      .box2 .footer-menu em.active span {
+      .box2 .footer-menu em.active span, .box2 .footer-menu em:hover span {
         color: #fff; }
-      .box2 .footer-menu em.active:nth-of-type(1):after {
+      .box2 .footer-menu em.active:nth-of-type(1):after, .box2 .footer-menu em:hover:nth-of-type(1):after {
         background: url(../../assets/images/icon/spirit.png) no-repeat left -0.99rem;
         -webkit-background-size: 7rem 12rem;
         background-size: 7rem 12rem; }
-      .box2 .footer-menu em.active:nth-of-type(2):after {
+      .box2 .footer-menu em.active:nth-of-type(2):after, .box2 .footer-menu em:hover:nth-of-type(2):after {
         background: url(../../assets/images/icon/spirit.png) no-repeat -0.85rem -0.99rem;
         -webkit-background-size: 7rem 12rem;
         background-size: 7rem 12rem; }
-      .box2 .footer-menu em.active:nth-of-type(3):after {
+      .box2 .footer-menu em.active:nth-of-type(3):after, .box2 .footer-menu em:hover:nth-of-type(3):after {
         background: url(../../assets/images/icon/spirit.png) no-repeat -1.75rem -0.99rem;
         -webkit-background-size: 7rem 12rem;
         background-size: 7rem 12rem; }
@@ -411,7 +411,7 @@ h4 {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%);
-  top: 0.8rem;
+  top: 0.4rem;
   color: rgba(255, 255, 255, 0.35);
   text-align: center;
   padding-top: 0.4rem; }
@@ -447,6 +447,12 @@ h4 {
   right: 0;
   margin: auto;
   z-index: 999; }
+  .header.header-index {
+    width: 0.6rem;
+    left: auto;
+    right: 0.25rem; }
+    .header.header-index .nav .nav-wrapper {
+      width: 100%; }
   .header .nav {
     position: relative;
     z-index: 10; }
@@ -632,7 +638,7 @@ h4 {
       position: relative;
       height: 4.2rem;
       overflow: hidden;
-      margin-bottom: 3px; }
+      margin-bottom: 1px; }
       .main-tab .main-txt .main-item li img {
         width: 100%;
         height: auto;
@@ -731,6 +737,24 @@ h4 {
         margin-top: 0.4rem; }
         .main-tab .main-txt .main-business .buiness-form .submit-btn:hover {
           opacity: 0.7; }
+      .main-tab .main-txt .main-business .buiness-form .layer-tips {
+        width: 3rem;
+        height: 1.7rem;
+        line-height: 1.7rem;
+        text-align: center;
+        -webkit-border-radius: 0.05rem;
+        border-radius: 0.05rem;
+        color: #fff;
+        font-size: 0.3rem;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 10;
+        display: none; }
   .main-tab .main-txt .main-join .join-info {
     color: #233da0;
     font-weight: bold; }
